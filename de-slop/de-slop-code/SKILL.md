@@ -1,8 +1,21 @@
+---
+name: de-slop-code
+description: Use when refactoring oversized, duplicated, tightly coupled, or poorly organized production code. Split code into cohesive, feature-oriented components while preserving behavior. Do not use for test-only restructuring; use de-slop-tests instead.
+---
+
 # De-Slop Skill
 
 The goal of this skill is to continuously improve the architecture of the codebase by reducing complexity, increasing cohesion, and making future changes easier.
 
 Refactoring is **not** about moving code into more files. It is about improving the structure of the system while preserving behavior.
+
+See:
+
+- `references/solid-python.md`
+- `references/solid-java.md`
+
+Use the examples as guidance only. Apply SOLID principles when they improve the design; do not introduce abstractions mechanically.
+Do not copy the examples verbatim. Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
 
 ## Core Objectives
 
