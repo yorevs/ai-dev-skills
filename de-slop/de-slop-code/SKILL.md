@@ -17,6 +17,7 @@ See:
 Use the examples as guidance only. Apply SOLID principles when they improve the design; do not introduce abstractions mechanically.
 Do not copy the examples verbatim. Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
 
+
 ## Core Objectives
 
 * Keep components focused and cohesive.
@@ -79,12 +80,12 @@ Avoid introducing abstractions until there is a demonstrated need.
 
 Do **not** create:
 
-* interfaces with only one implementation
-* factories that construct a single class
-* strategies with only one strategy
-* services that simply forward calls
+* Interfaces with only one implementation
+* Factories that construct a single class
+* Strategies with only one strategy
+* Services that simply forward calls
 
-unless they clearly improve the architecture.
+Unless, they clearly improve the architecture.
 
 The simplest solution that remains maintainable is usually the best one.
 
@@ -131,10 +132,10 @@ Before extracting code into a new component, verify that it represents a cohesiv
 
 Extraction should improve:
 
-* readability
-* reuse
-* ownership
-* maintainability
+* Readability
+* Reuse
+* Ownership
+* Maintainability
 
 If it merely moves code elsewhere, do not extract it.
 
@@ -154,10 +155,10 @@ Avoid creating abstractions based solely on implementation similarity.
 
 Stop decomposing once components have:
 
-* a clear responsibility
-* reasonable size
-* good readability
-* low coupling
+* A clear responsibility
+* Reasonable size
+* Good readability
+* Low coupling
 
 Further decomposition should provide clear architectural value.
 
@@ -185,10 +186,10 @@ Identify opportunities to extract cohesive components.
 
 For each extraction explain:
 
-* responsibility
-* dependencies
-* expected public interface
-* expected reuse
+* Responsibility
+* Dependencies
+* Expected public interface
+* Expected reuse
 
 ---
 
@@ -204,11 +205,11 @@ Favor vertical slices over technical layers.
 
 Verify:
 
-* dependencies flow in one direction
-* no circular imports
-* responsibilities remain cohesive
-* duplication has been reduced
-* readability has improved
+* Dependencies flow in one direction
+* No circular imports
+* Responsibilities remain cohesive
+* Duplication has been reduced
+* Readability has improved
 
 ---
 
@@ -218,11 +219,11 @@ Avoid circular dependencies.
 
 Prefer solving dependency issues through:
 
-* better dependency direction
-* dependency injection
-* shared abstractions
-* composition
-* event-driven communication (when appropriate)
+* Better dependency direction
+* Dependency injection
+* Shared abstractions
+* Composition
+* Event-driven communication (when appropriate)
 
 Event-driven architecture is **one** solution—not the default solution.
 
@@ -246,12 +247,12 @@ Never silently ignore failures.
 
 Do **not** introduce:
 
-* backward compatibility layers
-* legacy wrappers
-* transitional code
-* deprecated APIs
+* Backward compatibility layers
+* Legacy wrappers
+* Transitional code
+* Deprecated APIs
 
-unless explicitly requested.
+Unless explicitly requested.
 
 If preserving legacy behavior appears necessary, explain why and ask the user before proceeding.
 
@@ -332,7 +333,7 @@ This creates unnecessary coupling because adding a new feature requires modifyin
 
 ## Preferred Grouping
 
-Instead organize by feature:
+Instead, organize by feature:
 
 ```
 Aliases
@@ -401,9 +402,9 @@ Prefer:
 
 Avoid:
 
-* asserting hardcoded strings that have no behavioral significance
-* testing private implementation details
-* tests tightly coupled to internal structure
+* Asserting hardcoded strings that have no behavioral significance
+* Testing private implementation details
+* Tests tightly coupled to internal structure
 
 When refactoring:
 
@@ -412,3 +413,26 @@ When refactoring:
 * New components should remain covered by existing tests or by new tests where appropriate.
 
 A successful refactor improves architecture without changing externally observable behavior.
+
+---
+
+# Repository Conventions
+
+## Follow Existing Style Rules
+
+Before modifying any files, inspect the repository for project style and formatting configuration.
+
+Examples include:
+
+- `checkstyle.xml`
+- `checkstyle/**/*.xml`
+- `.editorconfig`
+- `.clang-format`
+- `.prettierrc`
+- `pyproject.toml`
+- `.eslintrc*`
+- Any language-specific formatting or lint configuration
+
+Use the repository's existing conventions as the source of truth.
+
+When a Checkstyle configuration exists, treat it as authoritative for the files it governs.
