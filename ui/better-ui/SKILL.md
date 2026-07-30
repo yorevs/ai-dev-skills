@@ -10,10 +10,13 @@ The goal of this skill is to adhere to clean ui design principles to evaluate, d
 See:
 
   - `references/example-1.png`
+  - `references/example-2.png`
 
 ---
 
-## Core UI Design Principles to Enforce
+# Core UI Design Principles to Enforce
+
+## Page elements, fonts, colors, styles, ...
 
 ### 1. Structure, Spacing & Layout
 - **Use Space to Group Related Elements:** Group information using proximity, continuous alignment, and common containers. Avoid clutter—rely on white space rather than heavy borders or background containers to establish relationships.
@@ -46,6 +49,39 @@ See:
 - **Maintain Visual & Interaction Consistency:** Ensure icons, button shapes, and control styles are visually uniform across the entire app (e.g., consistent icon stroke weight, fill rules, and corner radii).
 - **Match Visual Design to Functionality:** Elements that look similar must behave similarly. Non-interactive elements (e.g., informational badges or static icons) should never share button styling, interactive colors, or hover cues.
 
+Here is a summarized list of key form design hints based on Andrew Coyle's article:
+
+## Forms
+
+* **Use a single column:** Multi-column layouts disrupt vertical momentum. Single-column forms are easier to scan and complete faster.
+* **Top-align labels:** Top-aligned labels lead to faster completion rates and scale better on mobile screens. *(Exception: Left-align labels for dense, data-heavy forms where scanning inputs side-by-side helps reduce overall page height).*
+* **Group labels closely with their inputs:** Keep a label and its corresponding field close together, and leave clear spacing between separate fields to avoid confusion.
+* **Group related fields logically:** Break long forms into logical sections or batches so they don't feel overwhelming.
+
+### Options & Selections
+
+* **Show all options if 5 or fewer:** Avoid drop-down menus for small sets of options (use radio buttons or checkboxes instead). Use drop-downs for 6+ options, and add contextual search if there are more than 25.
+* **Stack checkboxes and radio buttons vertically:** Vertical stacking makes options much faster and easier to scan than horizontal arrangements.
+
+### Labels & Microcopy
+
+* **Don't use placeholder text as labels:** Placeholders fade when users type, which causes usability issues. Keep labels visible above the field.
+* **Avoid ALL CAPS:** Title case or sentence case is much easier to read and scan than uppercase text.
+* **Mark optional fields instead of required ones:** Drop the required asterisk (`*`) and explicitly label the few fields that are "(optional)".
+* **Make CTAs descriptive:** Use specific, intent-driven button text (e.g., "Create Account") rather than generic words like "Submit".
+* **Keep basic helper text visible:** Avoid hiding essential instructions behind tooltips; show basic helper text directly on screen.
+
+### Validation & Inputs
+
+* **Specify errors inline:** Show errors directly next to the field where they occurred, accompanied by a clear explanation.
+* **Validate after completion:** Trigger inline validation *after* the user finishes typing or leaves the field (unless real-time feedback actively helps during input, such as password strength or character counts).
+* **Match field length to expected input:** Adjust the input field width to match the length of expected answers (e.g., zip codes, phone numbers).
+
+### General Best Practices
+
+* **Differentiate actions:** Clearly distinguish the primary action from secondary options (or eliminate secondary options altogether).
+* **Omit unnecessary fields:** Always ask if a field can be excluded, postponed, or inferred automatically.
+* **Automate data entry where possible:** Leverage autofill, location data, biometrics, OCR, or conversational interfaces to reduce manual typing.
 
 ---
 
