@@ -82,6 +82,7 @@ Here is a summarized list of key form design hints based on Andrew Coyle's artic
 * **Differentiate actions:** Clearly distinguish the primary action from secondary options (or eliminate secondary options altogether).
 * **Omit unnecessary fields:** Always ask if a field can be excluded, postponed, or inferred automatically.
 * **Automate data entry where possible:** Leverage autofill, location data, biometrics, OCR, or conversational interfaces to reduce manual typing.
+* **Symmetry is beauty:** Keep elements consistently aligned and the same size whenever possible. Use 1rem for margins by default unless otherwise specified.
 
 ---
 
