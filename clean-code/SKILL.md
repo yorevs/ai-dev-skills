@@ -9,7 +9,9 @@ The goal of this skill is to adhere to clean code principles. Those make the cod
 
 See:
 
-  - TODO
+  - `references/dry.md`
+  - `references/kiss.md`
+  - `references/yagni.md`
 
 
 ## Core Objectives
@@ -41,23 +43,31 @@ See:
   - Every function must perform **one single task** and do it well.
   - If a function validates, calculates, and formats, break it down into smaller, composable helper functions (`validate_user`, `calculate_values`, `format_output`).
 
-5. Follow the DRY Principle (Don't Repeat Yourself)
-  - Eliminate duplicated logic, math, or structures across functions and modules.
-  - Abstract repeated patterns into reusable utility functions or classes.
-
-6. Adhere to Language-Specific Coding Standards
+5. Adhere to Language-Specific Coding Standards
   - Enforce accepted community conventions and style guides (e.g., PEP 8 for Python, camelCase for Java/JS, consistent indentation and brace positioning).
 
-7. Encapsulate Nested Conditionals
+6. Encapsulate Nested Conditionals
   - Extract complex or nested `if/else` logic into dedicated, descriptively named predicate or helper functions (e.g., `get_discount_rate(price)`).
   - Keep primary function control flows flat and linear.
 
-8. Refactor Continuously
+7. Refactor Continuously
   - Apply the "Boy Scout Rule": always leave the codebase cleaner than you found it.
   - Focus on improving structural clarity without changing external behavior.
 
-9. Leverage Version Control Workflows
+8. Leverage Version Control Workflows
   - Structure changes incrementally so refactoring steps can be safely tracked, isolated, and reverted if needed.
+
+9. Follow the DRY Principle (Don't Repeat Yourself)
+  - Eliminate duplicated logic, math, or structures across functions and modules.
+  - Abstract repeated patterns into reusable utility functions or classes.
+
+10. Follow the KISS Principle (Keep It Simple, Stupid)
+    - Prioritize straightforward, explicit implementations over complex, overly "clever," or obscure code.
+    - If a simple loop or standard conditional solves the problem clearly, do not introduce unnecessarily complex abstractions or dense one-liners.
+
+11. Follow the YAGNI Principle (You Ain’t Gonna Need It)
+    - Implement only the features, functionality, and abstractions required for current, explicit needs.
+    - Avoid speculative programming—do not write code for hypothetical future requirements, unused configuration hooks, or premature edge cases that haven't been requested.
 
 ---
 
