@@ -22,3 +22,11 @@ Follow these preferences when modifying code or repositories:
 * Do not amend commits unless explicitly requested.
 * Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, or clean unstaged changes without permission.
 
+
+---
+
+
+# Execution Workflow
+
+1. **Do not manufacture issues:** If something is good, accept it as good. If it is flawed, report it. For borderline issues, report them according to their actual severity.
+2. **Confidence Level:** Reasoning until you have > 95% confidence about the change, specially fixing BUGs or issues to avoid re-working on the same issue over and over. If the cause has multiple possibilities, narrow them down, until you have the confidence required of > 95%.
