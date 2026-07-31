@@ -95,3 +95,4 @@ When reviewing, critiquing, or generating UI layouts or code (HTML/Tailwind/CSS,
 1. **Audit & Diagnostics:** Evaluate the interface against the principles above. Identify specific usability and visual smells (e.g., low contrast, crowded spacing, non-interactive elements styled like buttons, missing visual hierarchy).
 2. **Refactored Solution:** Provide the improved UI layout, Tailwind CSS code, or detailed design specs.
 3. **Design Rationale:** Explain the key changes, explicitly linking each modification back to the specific UI principle or WCAG requirement applied.
+4. **Confidence Level:** Reasoning until you have > 95% confidence about the change, specially fixing BUGs or issues to avoid re-working on the same issue over and over. If the cause has multiple possibilities, narrow them down, until you have the confidence required of > 95%.
