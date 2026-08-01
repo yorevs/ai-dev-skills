@@ -19,7 +19,7 @@ Follow these preferences when modifying code or repositories:
 * Run targeted tests for localized changes. When behavior changes broadly, inform the user and run the full relevant test suite.
 * Keep UI and rendering concerns separate from business logic whenever possible.
 * Use the narrowest visibility supported by the language for methods and fields, and explain when public visibility is necessary. Use the Java convention to order members as: public, package-private, protected, private. Ignore visibility levels and ordering rules that do not apply to the language in use.
-* Do not amend commits unless explicitly requested.
+* Do not amend commits unless explicitly requested. Never commit code if not direct asked for (don't use the history for that. Committing is always a new prompt I send).
 * Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, or clean unstaged changes without permission.
 
 
@@ -30,3 +30,9 @@ Follow these preferences when modifying code or repositories:
 
 1. **Do not manufacture issues:** If something is good, accept it as good. If it is flawed, report it. For borderline issues, report them according to their actual severity.
 2. **Confidence Level:** Reasoning until you have > 95% confidence about the change, specially fixing BUGs or issues to avoid re-working on the same issue over and over. If the cause has multiple possibilities, narrow them down, until you have the confidence required of > 95%.
+3. Always notify the User when changes require any of the following:
+  * Restarting the web application
+  * Restarting the backend service
+  * Regenerating the database
+  * Clearing the cache
+  * Any other required post-deployment actions
