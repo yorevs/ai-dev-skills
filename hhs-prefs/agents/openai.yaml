@@ -1,0 +1,6 @@
+interface:
+  display_name: "HHS Preferences"
+  short_description: "Apply personal preferences when mutating files"
+  icon_small: "./logo.png"
+  icon_large: "./logo.png"
+  default_prompt: "Use $hhs-prefs to apply my preferences while modifying these files."

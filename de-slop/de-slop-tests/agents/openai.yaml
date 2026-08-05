@@ -1,0 +1,6 @@
+interface:
+  display_name: "De-Slop Tests"
+  short_description: "Reorganize large test suites without losing coverage"
+  icon_small: "./logo.png"
+  icon_large: "./logo.png"
+  default_prompt: "Use $de-slop-tests to reorganize this test suite while preserving every assertion and behavior."
