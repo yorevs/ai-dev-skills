@@ -79,6 +79,20 @@ Whenever there is uncertainty about a modification:
 
 The priority is to **preserve everything outside the task's scope**, modifying only the minimum necessary to satisfy exactly what the user requested.
 
+### Implementation Versus Research
+
+It is essential to correctly identify the user's intent before taking any action.
+
+First, determine whether the user is requesting only **analysis, investigation, review, or research**, or whether they actually want an **implementation or modification to be performed**.
+
+Requests phrased with terms such as **"check"**, **"review"**, **"analyze"**, **"investigate"**, **"evaluate"**, or similar wording **must not be interpreted automatically as authorization to modify code, files, configurations, or system behavior**.
+
+In these cases, limit the response to the requested analysis and present the findings or conclusions.
+
+Only perform changes when the user's intent to modify or implement something is explicit.
+
+**If there is any ambiguity about whether the user wants analysis only or also wants implementation, ask for clarification before making any changes.**
+
 
 ---
 
