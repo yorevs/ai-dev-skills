@@ -1,97 +1,25 @@
 ---
 name: hhs-prefs
-description: Use EVERY TIME you need to mutate a file. Creating files DO NOT APPLY.
+description: Use EVERY TIME you need to modify or delete an existing file, ensuring changes remain strictly limited to the user’s explicit scope. Does not apply when only creating new files.
 ---
 
 # HHS Preferences
 
 Follow these preferences when modifying code or repositories:
 
-* Implement requested changes directly instead of only describing them.
 * Preserve all user-authored changes. Do not delete, revert, or overwrite them without explicit permission.
-* Never run destructive repository commands such as `git reset --hard`, `git checkout --`, or equivalent commands without explicit approval.
-* Prefer non-interactive commands.
-* Use `rg` and `rg --files` for searching and file discovery.
+* Never run destructive commands such as `git reset --hard`, `git checkout --`, `rm -rf`, `mv -f`, or equivalent commands without explicit approval.
+* Prefer non-interactive commands by using quiet flags.
+* Use `fd` doe files and `rg` and for strings and file discoveries.
 * Run independent read operations in parallel when possible.
-* Use UTF-8 encoding. Prefer ASCII for new content unless the file already uses non-ASCII characters or the feature requires them.
+* Use "UTF-8" encoding and en_Us locale. Prefer ASCII for new content unless the file already uses non-ASCII characters, Unicode, or when the feature requires them.
 * Add only concise, useful comments. Avoid comments that merely restate the code.
-* When adding a feature, add relevant tests for applicable happy, failure, edge, and regression paths. If automated tests are not applicable, briefly explain why.
+* When adding a feature, add relevant tests for applicable happy, unhappy (failure), edge, and regression paths when the change impacts old behaviors. If automated tests are not applicable, briefly explain why.
 * Run targeted tests for localized changes. When behavior changes broadly, inform the user and run the full relevant test suite.
-* Keep UI and rendering concerns separate from business logic whenever possible.
+* Keep UI and rendering concerns separate from business logic whenever possible (MVC pattern).
 * Use the narrowest visibility supported by the language for methods and fields, and explain when public visibility is necessary. Use the Java convention to order members as: public, package-private, protected, private. Ignore visibility levels and ordering rules that do not apply to the language in use.
-* Do not amend commits unless explicitly requested. Never commit code if not direct asked for (don't use the history for that. Committing is always a new prompt I send).
-* Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, or clean unstaged changes without permission.
-
-
----
-
-
-## Strict Scope Restriction
-
-Every feature, fix, update, or task must be executed **strictly according to the description and requirements provided by the user**.
-
-### Define the Scope First
-
-Before analyzing the implementation or modifying any code, files, configuration, or system behavior, your **first reasoning activity must be to clearly define the scope of the task**.
-
-Only consider something in scope when it has been **explicitly requested by the user**.
-
-Do not expand the scope based on assumptions, inferred intent, best practices, personal preferences, improvement opportunities, or conclusions about what "should probably" be changed.
-
-### Execute Strictly Within Scope
-
-Implement only the changes required to satisfy the explicit requirements of the task.
-
-Do not independently perform:
-
-* Unrequested refactoring;
-* Architectural improvements;
-* Style or organizational changes;
-* Optimizations;
-* Unrequested behavioral changes;
-* Fixes for adjacent or unrelated issues;
-* Renaming;
-* Code or file restructuring;
-* Dependency updates;
-* Changes to interfaces, contracts, or APIs;
-* Any other modification that is not required to fulfill the defined scope.
-
-The fact that a change appears "better", "cleaner", "more correct", "more modern", or "recommended" **does not make it part of the scope**.
-
-
-### Out-of-Scope Changes
-
-If, during execution, you determine that an out-of-scope change is genuinely required to complete the task correctly:
-
-1. **Do not make the change immediately.**
-2. Clearly inform the user about the additional change that would be required.
-3. Explain objectively why it is necessary and how it relates to the original task.
-4. Wait for the user's explicit authorization before making that change.
-
-Out-of-scope changes must never be performed silently.
-
-
-### Decision Rule
-
-Whenever there is uncertainty about a modification:
-
-**If it was not explicitly requested and is not strictly required to fulfill the described requirement, do not make it.**
-
-The priority is to **preserve everything outside the task's scope**, modifying only the minimum necessary to satisfy exactly what the user requested.
-
-### Implementation Versus Research
-
-It is essential to correctly identify the user's intent before taking any action.
-
-First, determine whether the user is requesting only **analysis, investigation, review, or research**, or whether they actually want an **implementation or modification to be performed**.
-
-Requests phrased with terms such as **"check"**, **"review"**, **"analyze"**, **"investigate"**, **"evaluate"**, or similar wording **must not be interpreted automatically as authorization to modify code, files, configurations, or system behavior**.
-
-In these cases, limit the response to the requested analysis and present the findings or conclusions.
-
-Only perform changes when the user's intent to modify or implement something is explicit.
-
-**If there is any ambiguity about whether the user wants analysis only or also wants implementation, ask for clarification before making any changes.**
+* Do not amend commits unless explicitly requested. Never commit code if not direct asked for (don't use the history for that. Committing is always a new prompt, specifically for that). When committing, check the last commit and follow the comment style.
+* Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, stash, or clean unstaged changes without asking permission for that.
 
 
 ---

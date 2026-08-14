@@ -1,0 +1,6 @@
+interface:
+  display_name: "Scoped"
+  short_description: "Restrict code changes strictly to what is necessary."
+  icon_small: "./logo.png"
+  icon_large: "./logo.png"
+  default_prompt: "Use $scoped to restrict code changes strictly to what is necessary while modifying these files."
