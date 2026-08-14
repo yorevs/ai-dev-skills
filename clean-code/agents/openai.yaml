@@ -1,6 +1,6 @@
 interface:
   display_name: "Clean Code"
   short_description: "Write and refactor maintainable code"
-  icon_small: "./logo.png"
-  icon_large: "./logo.png"
+  icon_small: "./assets/logo.png"
+  icon_large: "./assets/logo.png"
   default_prompt: "Use $clean-code to improve this code while preserving its behavior."

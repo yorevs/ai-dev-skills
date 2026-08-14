@@ -1,6 +1,6 @@
 interface:
   display_name: "Better UI"
   short_description: "Design clear, consistent, accessible interfaces"
-  icon_small: "./logo.png"
-  icon_large: "./logo.png"
+  icon_small: "./assets/logo.png"
+  icon_large: "./assets/logo.png"
   default_prompt: "Use $better-ui to improve this interface for clarity, consistency, and accessibility."

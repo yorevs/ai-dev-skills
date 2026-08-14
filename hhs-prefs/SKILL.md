@@ -21,15 +21,13 @@ Follow these preferences when modifying code or repositories:
 * Do not amend commits unless explicitly requested. Never commit code if not direct asked for (don't use the history for that. Committing is always a new prompt, specifically for that). When committing, check the last commit and follow the comment style.
 * Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, stash, or clean unstaged changes without asking permission for that.
 
-
 ---
-
 
 # Execution Workflow
 
 1. **Do not manufacture issues:** If something is good, accept it as good. If it is flawed, report it. For borderline issues, report them according to their actual severity.
 2. **Define the scope:** Define the scope for the new feature or update strictly.
-3. **Confidence Level:** Reasoning until you have > 95% confidence about the change, specially fixing BUGs or issues to avoid re-working on the same issue over and over. If the cause has multiple possibilities, narrow them down, until you have the confidence required of > 95%.
+3. **Confidence Level:** Reasoning until you have > 95% confidence about the change, specially fixing bugs or issues to avoid re-working on the same issue over and over. If the root cause may have multiple possibilities, narrow them down, until you have the confidence required of > 95%.
 4. Always notify the User when changes require any of the following:
   * Restarting the web application
   * Restarting the backend service

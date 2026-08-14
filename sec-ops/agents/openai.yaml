@@ -1,6 +1,6 @@
 interface:
   display_name: "Security Operations"
   short_description: "Review software with secure-by-design practices"
-  icon_small: "./logo.png"
-  icon_large: "./logo.png"
+  icon_small: "./assets/logo.png"
+  icon_large: "./assets/logo.png"
   default_prompt: "Use $sec-ops to review this software for applicable security risks and practical mitigations."
