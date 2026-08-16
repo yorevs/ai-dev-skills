@@ -5,11 +5,9 @@ description: Use when reorganizing or splitting oversized test suites. Refactor 
 
 # Test De-Slop Skill
 
-You are working within the target repository.
-
 Your goal is to improve the maintainability of oversized test suites by splitting them into cohesive, feature-focused test files while preserving all existing behavior.
 
-Refactoring tests is **not** about creating more files—it is about making tests easier to understand, navigate, and extend.
+Refactoring tests is **not** about creating more files—it is about making tests easier to understand, navigate, and extend. 
 
 See:
 
@@ -26,6 +24,11 @@ Focus only on:
 
 * The oversized test suite
 * The production feature or module that the test suite covers
+* Detecting and removing assertions/tests that provide no value and only waste time and tokens.
+e.g.:
+
+`assert modal.titleglyph == 'X'`
+`assert modal.title = 'My Title'`
 
 ---
 
