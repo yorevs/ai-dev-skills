@@ -20,6 +20,7 @@ Follow these preferences when modifying code or repositories:
 * Use the narrowest visibility supported by the language for methods and fields, and explain when public visibility is necessary. Use the Java convention to order members as: public, package-private, protected, private. Ignore visibility levels and ordering rules that do not apply to the language in use.
 * Do not amend commits unless explicitly requested. Never commit code if not direct asked for (don't use the history for that. Committing is always a new prompt, specifically for that). When committing, check the last commit and follow the comment style.
 * Treat unexpected files and working-tree changes as user-owned. Do not revert unrelated changes, remove untracked files, stash, or clean unstaged changes without asking permission for that.
+* If you encounter untracked changes or divergences on files from your context, assume the user did them manually and update your context. Do not revert or re-apply anything without the user consent.
 
 ---
 
