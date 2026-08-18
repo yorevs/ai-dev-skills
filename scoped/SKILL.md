@@ -54,6 +54,10 @@ If, during execution, you determine that an out-of-scope change is genuinely req
 
 Out-of-scope changes must never be performed silently.
 
+### No-Change-no-Run
+
+When deciding which tests to run. Think of: Time and Tokens are expensive, so, don't run what you don't need. If the code-change only touched the frontend, there is NO NEED to run backend tests, and vice versa. Opt running localized tests rather than the entire suite.
+
 
 ### Decision Rule
 
