@@ -35,3 +35,11 @@ Follow these preferences when modifying code or repositories:
   * Regenerating the database
   * Clearing the cache
   * Any other required post-deployment actions
+
+
+# Very Important Rules
+
+1. DON'T ADD BACKWARD COMPATIBILITY (legacy) WITHOUT ASKING FIRST.
+2. DON'T RUN THE ENTIRE TEST SUITE WITHOUT ASKING FIRST.
+3. WHEN ADDING FALLBACKS THAT IS NOT EXPLICITLY REQUESTED BY THE USER; WARN HIM BEFOREHAND.
+4. WHEN ASKED TO COMMIT; DON'T RUN THE ENTIRE TEST SUIT UNLESS EXPLICITLY REQUESTED BY THE USER.
