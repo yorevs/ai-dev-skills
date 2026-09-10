@@ -3,16 +3,18 @@ name: scoped
 description: Use EVERY TIME you need to make code changes—such as adding, removing, or updating features—to ensure all modifications remain strictly limited to the user’s explicitly requested scope.
 ---
 
-See:
-
-- `references/examples.md`
-
-Use the examples as guidance only.
-Do not copy the examples verbatim. Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
-
-## Strict Scope Restriction
+# Scoped
 
 Every feature, fix, update, or task must be executed **strictly according to the description and requirements provided by the user**. If the intent of the user is research, no code change is made.
+
+See:
+- `references/examples.md`
+
+**Use the examples as guidance only. Do not copy the examples verbatim.**
+
+Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
+
+## Strict Scope Restriction
 
 ### Define the Scope First
 

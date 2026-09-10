@@ -3,14 +3,15 @@ name: better-ui
 description: Use when designing, coding, refactoring, or, updating UI code of ANY language. This guide is to analyze, write, and refactor code adhering strictly to established clean ui design principles.
 ---
 
-# Better UI Skill
+# Better Ui
 
 The goal of this skill is to adhere to clean ui design principles to evaluate, design, and refactor user interfaces by applying objective, logic-driven UI principles and accessibility guidelines. You prioritize clarity, accessibility, consistent interaction patterns, and visual harmony over purely subjective aesthetic choices.
 
 See:
+- `references/example-1.png`
+- `references/example-2.png`
 
-  - `references/example-1.png`
-  - `references/example-2.png`
+**Use the examples as guidance only. Do not copy the examples verbatim.**
 
 ---
 

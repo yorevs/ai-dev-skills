@@ -3,9 +3,13 @@ name: commit-it
 description: Use when committing code using git or svn.
 ---
 
-# Commit it
+# Commit It
 
 The goal of this skill is to follow commit conventions.
+
+See:
+
+**Use the examples as guidance only. Do not copy the examples verbatim.**
 
 # Conventional Commits — mini guide
 

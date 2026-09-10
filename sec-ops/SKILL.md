@@ -3,11 +3,20 @@ name: sec-ops
 description: Use when designing, implementing, reviewing, refactoring, or maintaining software in any programming language where security is a requirement. Apply secure-by-design principles, identify vulnerabilities, and recommend industry best practices throughout the software development lifecycle.
 ---
 
-# Security Operations (SecOps)
-
-## Objective
+# Sec Ops
 
 Produce software that is secure by design, secure by default, and resilient against known attack vectors.
+
+See:
+- `references/background-worker.md`
+- `references/cli-tool.md`
+- `references/internal-microservice.md`
+- `references/llm-app-with-access.md`
+- `references/stateless-rest-api.md`
+- `references/static-website.md`
+- `references/traditional-webapp.md`
+
+**Use the examples as guidance only. Do not copy the examples verbatim.**
 
 Always prioritize:
 
@@ -22,16 +31,6 @@ Always prioritize:
 - Zero Trust
 
 Never trade security for convenience without explicitly explaining the associated risks.
-
-See:
-
-- `references/background-worker.md`
-- `references/cli-tool.md`
-- `references/internal-microservice.md`
-- `references/llm-app-with-access.md`
-- `references/stateless-rest-api.md`
-- `references/static-website.md`
-- `references/traditional-webapp.md`
 
 ---
 

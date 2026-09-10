@@ -3,9 +3,13 @@ name: hhs-prefs
 description: Use EVERY TIME you need to modify or delete an existing file, ensuring changes remain strictly limited to the user’s explicit scope. Does not apply when only creating new files.
 ---
 
-# HHS Preferences
+# Hhs Prefs
 
 Follow these preferences when modifying code or repositories:
+
+See:
+
+**Use the examples as guidance only. Do not copy the examples verbatim.**
 
 * Preserve all user-authored changes. Do not delete, revert, or overwrite them without explicit permission.
 * Never run destructive commands such as `git reset --hard`, `git checkout --`, `rm -rf`, `mv -f`, or equivalent commands without explicit approval.

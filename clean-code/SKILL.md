@@ -3,15 +3,16 @@ name: clean-code
 description: Use when designing, coding, refactoring, or, updating code of ANY language. This guide is to analyze, write, and refactor code adhering strictly to established clean code principles.
 ---
 
-# Clean Code Skill
+# Clean Code
 
 The goal of this skill is to adhere to clean code principles. Those make the codebase easier to read and navigate, which makes it faster for developers to get up to speed and start contributing. Here are some reasons why clean code is essential. **Readability and maintenance**, **Team collaboration**, **Debugging and issue resolution**, and **Improved quality and reliability**.
 
 See:
+- `references/dry.md`
+- `references/kiss.md`
+- `references/yagni.md`
 
-  - `references/dry.md`
-  - `references/kiss.md`
-  - `references/yagni.md`
+**Use the examples as guidance only. Do not copy the examples verbatim.**
 
 
 ## Core Objectives

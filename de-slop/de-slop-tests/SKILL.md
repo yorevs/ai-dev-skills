@@ -3,18 +3,18 @@ name: de-slop-tests
 description: Use when reorganizing or splitting oversized test suites. Refactor tests into cohesive, feature-focused files, preserve all behavioral coverage and assertions, and never modify production code.
 ---
 
-# Test De-Slop Skill
+# De Slop Tests
 
 Your goal is to improve the maintainability of oversized test suites by splitting them into cohesive, feature-focused test files while preserving all existing behavior.
 
-Refactoring tests is **not** about creating more files—it is about making tests easier to understand, navigate, and extend. 
-
 See:
-
 - `references/examples.md`
 
-Use the examples as guidance only.
-Do not copy the examples verbatim. Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
+**Use the examples as guidance only. Do not copy the examples verbatim.**
+
+Refactoring tests is **not** about creating more files—it is about making tests easier to understand, navigate, and extend.
+
+Apply the underlying principles to the current codebase while following the repository's existing architecture and coding style.
 
 ---
 
