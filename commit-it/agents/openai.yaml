@@ -1,0 +1,6 @@
+interface:
+  display_name: "Commit It"
+  short_description: "Standardize commit messages, keeping clean and meaningful."
+  icon_small: "./assets/logo.png"
+  icon_large: "./assets/logo.png"
+  default_prompt: "Use $commit-it to create commits that are readable by both humans and tools, aligned with [SemVer](https://semver.org)."
